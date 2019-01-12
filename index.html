@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Booklist App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <link rel="stylesheet" href="style/font-awesome.css">
+    </head>
+    <body>
+    
+        <div class="container mt-4">
+                <div class="row align-items-center justify-content-center">
+            <h1 class="display-4 col-8 text-center">My <span class="text-primary">Book</span> List</h1>
+            <form id="book-form" class="col-8">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN#</label>
+                    <input id="isbn" type="text" class="form-control">
+                </div>
+                <input type="submit" class="display-2 btn btn-primary btn-block" value="Add Book">
+            </form>
+            <table class="table table-striped col-8 mt-4">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN#</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+            </div>
+        </div>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
