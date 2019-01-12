@@ -14,7 +14,6 @@ class UI{
     static diplayBooks(){
         const books = Store.getBooks();
         books.forEach((book) => UI.addBooktoList(book));
-        
     }
 
     //Add book to list
@@ -138,3 +137,5 @@ document.querySelector("#book-list").addEventListener("click", (e) => {
     //show book remove message
     UI.showAlerts("Book removed from list", "info");
 });
+
+
